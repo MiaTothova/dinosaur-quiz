@@ -20,12 +20,61 @@ const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
 function setNextQuestion() {
+    //will remove previous answers
+    resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
 function showQuestion(question) {
     questionElement.innerText = question.question
+    question.answers.forEach(answer => {
+        const button = document.createElement('button')
+        button.innerText = answer.text
+        button.classList.add('btn')
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener('click', selectAnswer)
+        answerButtonsElement.appendChild(button)
+    })
 
+}
+
+//const nextButton = document.getElementById('next-btn')
+
+//removes previous questions
+function resetState() {
+    //nextButton.classList.add('hide')
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild
+        (answerButtonsElement.firstChild)
+    }
+
+}
+
+function selectAnswer(e) {
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(answerButtonsElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+
+    } )
+}
+
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
+    }
+
+}
+
+function clearStatusClass(element) {
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
 }
 
 // 4. list of questions
@@ -42,89 +91,89 @@ const questions = [
     {
         question: 'What does the word dinosaur mean? ',
         answers: [
-            { text: 'Big lizard', correct: false},
-            { text: 'Hungry lizard', correct: false},
-            {text: 'Terrible lizard', correct: true}
+            { text: 'A) Big lizard', correct: false},
+            { text: 'B) Hungry lizard', correct: false},
+            {text: 'C) Terrible lizard', correct: true}
 
         ] 
     },
     {
         question: 'Dinosaurs first appeared in which geological period?',
         answers: [
-            { text: 'Triassic', correct: true},
-            { text: 'Jurassic', correct: false},
-            {text: 'Cretaceous ', correct: false}
+            { text: 'A) Triassic', correct: true},
+            { text: 'B) Jurassic', correct: false},
+            {text: 'C) Cretaceous ', correct: false}
 
         ] 
     },
     {
-        question: 'What is the study of fossils called? ?',
+        question: 'What is the study of fossils called? ',
         answers: [
-            { text: 'Ice-creamology ', correct: false},
-            { text: ' Palaeontology', correct: true},
-            {text: 'Historiology ', correct: false}
+            { text: 'A) Ice-creamology ', correct: false},
+            { text: ' B) Palaeontology', correct: true},
+            {text: 'C) Historiology ', correct: false}
 
         ] 
     },
     {
         question: 'When did dinosaurs go extinct?',
         answers: [
-            { text: 'Around 85 million years ago ', correct: false},
-            { text: 'Around 75 million years ago ', correct: false},
-            {text: 'Around 65 million years ago', correct: true}
+            { text: 'A) Around 85 million years ago ', correct: false},
+            { text: 'B) Around 75 million years ago ', correct: false},
+            {text: 'C) Around 65 million years ago', correct: true}
 
         ] 
     },
     {
         question: 'How many horns did a triceratops have?',
         answers: [
-            { text: '4', correct: false},
-            { text: '3', correct: true},
-            {text: '1', correct: false}
+            { text: 'A) 4', correct: false},
+            { text: 'B) 3', correct: true},
+            {text: 'C) 1', correct: false}
 
         ] 
     },
     {
         question: 'Why did dinosaurs go extinct?',
         answers: [
-            { text: 'They froze during Ice-age ', correct: false},
-            { text: 'They were killed by an asteroid', correct: true},
-            {text: 'They magically disappeared ', correct: false}
+            { text: 'A) They froze during Ice-age ', correct: false},
+            { text: 'B) They were killed by an asteroid', correct: true},
+            {text: 'C) They magically disappeared ', correct: false}
 
         ] 
     },
     {
         question: 'What was the first dinosaur to be discovered?',
         answers: [
-            { text: 'Mosasaurus ', correct: false},
-            { text: 'T-rex ', correct: false},
-            {text: 'Megalosaurus', correct: true}
+            { text: 'A) Mosasaurus ', correct: false},
+            { text: 'B) T-rex ', correct: false},
+            {text: 'C) Megalosaurus', correct: true}
 
         ] 
     },
     {
         question: 'How many claws did a velociraptor have on each hand?',
         answers: [
-            { text: '6', correct: false},
-            { text: '3', correct: true},
-            {text: '5', correct: false}
+            { text: 'A) 6', correct: false},
+            { text: 'B) 3', correct: true},
+            {text: 'C) 5', correct: false}
 
         ] 
     },
     {
         question: 'Which dinosaur was the size of a chicken?',
         answers: [
-            { text: ' Dilong', correct: false},
-            { text: 'Compsognathus', correct: true},
-            {text: 'Nemicolopterus ', correct: false}
+            { text: ' A) Dilong', correct: false},
+            { text: 'B) Compsognathus', correct: true},
+            {text: 'C) Nemicolopterus ', correct: false}
 
         ] 
     },
     {
         question: 'True or false: birds evolved from dinosaurs ',
         answers: [
-            { text: 'True', correct: true},
-            { text: 'False', correct: false},
+            { text: 'A) True', correct: true},
+            { text: 'B) False', correct: false},
             // add hide class to answer button here????
            
         ] 
