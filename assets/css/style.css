@@ -5,11 +5,6 @@ body {
     margin: 0;
     font-family: Nova Square, cursive;
     background-color:rgb(39, 19, 43);
-    background-image: url("../image/wp4197327.jpg");
-    width: 100%;
-	background-size: cover;
-	background-position: relative;
-	overflow: hidden;
     color: #fff;
     display: flex;
     justify-content: center;
