@@ -2,9 +2,12 @@
 const startButton = document.getElementById('start-btn');
 startButton.addEventListener('click', startGame);
 
+const correctAnwersLabel = document.getElementById('correct');
+const wrongAnswersLabel = document.getElementById('incorrect');
+
 //....
 const questtionContainer = document.getElementById('question-container');
-let shuffledQuestions, currentQuestionIndex;
+let shuffledQuestions, currentQuestionIndex, correctAnswers, wrongAnswers;
 
 //...
 function startGame() {
@@ -15,6 +18,8 @@ function startGame() {
     //generates random questions
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
+    correctAnswers = 0;
+    wrongAnswers = 0;
     setNextQuestion();
 }
 
@@ -59,9 +64,13 @@ function selectAnswer(e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
     setStatusClass(document.body, correct)
+
+    // Tranverse answers and show background color
     Array.from(answerButtonsElement.children).forEach((button) => {
         setStatusClass(button, button.dataset.correct);
     });
+
+    updateStatistics(correct);
 
     setTimeout(() => {
         if (shuffledQuestions.length > currentQuestionIndex + 1) {
@@ -72,6 +81,16 @@ function selectAnswer(e) {
             startButton.classList.remove('hide');
         }
     }, 1000 * 3);
+}
+
+function updateStatistics(isCorrectAnswer) {
+    if (isCorrectAnswer) {
+        correctAnswers++;
+        correctAnwersLabel.innerText = correctAnswers;
+    } else {
+        wrongAnswers++;
+        wrongAnswersLabel.innerText = wrongAnswers;
+    }
 }
 
 //....
