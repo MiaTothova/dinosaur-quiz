@@ -1,25 +1,29 @@
 // targets ID in html.........
 const startButton = document.getElementById('start-btn');
 startButton.addEventListener('click', startGame);
-
+//my own..
+const saveScoreButton = document.getElementById('save-score-btn') // today
+//my own.
 const correctAnwersLabel = document.getElementById('correct');
 const wrongAnswersLabel = document.getElementById('incorrect');
 
 //....
-const questtionContainer = document.getElementById('question-container');
+const questionContainer = document.getElementById('question-container');
 let shuffledQuestions, currentQuestionIndex, correctAnswers, wrongAnswers;
 
 //...
 function startGame() {
     //hide start btn when clicked
     startButton.classList.add('hide');
+    saveScoreButton.classList.add('hide')
     //removes hide class from container
-    questtionContainer.classList.remove('hide');
+    questionContainer.classList.remove('hide');
     //generates random questions
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     correctAnswers = 0;
     wrongAnswers = 0;
+    //calls function
     setNextQuestion();
 }
 
@@ -71,18 +75,30 @@ function selectAnswer(e) {
     });
 
     updateStatistics(correct);
-
+    //my-own...
+    //end of the game...
     setTimeout(() => {
         if (shuffledQuestions.length > currentQuestionIndex + 1) {
             currentQuestionIndex++;
             setNextQuestion();
         } else {
-            startButton.innerText = 'Restart';
+            startButton.innerHTML = 'Restart';
             startButton.classList.remove('hide');
+            saveScoreButton.classList.remove('hide'); //today
+            saveScoreButton.innerHTML = 'Save'; //today
         }
-    }, 1000 * 3);
+    }, 1000 * 2);
 }
 
+//my own code.
+document.querySelector('#save-score-btn').addEventListener('click', () => {
+    window.location.href = 'score.html';
+})
+
+
+
+//list of questions
+//own...
 function updateStatistics(isCorrectAnswer) {
     if (isCorrectAnswer) {
         correctAnswers++;
