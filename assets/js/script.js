@@ -96,7 +96,6 @@ document.querySelector('#save-score-btn').addEventListener('click', () => {
 })
 
 
-
 //list of questions
 //own...
 function updateStatistics(isCorrectAnswer) {
