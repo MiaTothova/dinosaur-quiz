@@ -4,7 +4,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: Nova Square, cursive;
-    background-color:rgb(39, 19, 43);
+    background-color: rgb(39, 19, 43);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -13,14 +13,23 @@ body {
     height: 100vh;
 }
 
+/*#heading {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+}*/
+
 .container {
     width: 800px;
     max-width: 80%;
     background-color: rgb(76, 138, 231);
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 0 0 10px 7px rgb(178, 202, 241);;
+    box-shadow: 0 0 10px 7px rgb(178, 202, 241);
+    ;
 }
+
 .btn-grid {
     display: flex;
     flex-direction: column;
@@ -29,27 +38,23 @@ body {
 }
 
 .btn {
-   background-color: rgb(207, 245, 238);
+    background-color: rgb(207, 245, 238);
 }
 
 /*Change of color base on answer*/
 .btn.correct {
     background-color: rgb(121, 240, 65);
 }
+
 .btn.wrong {
     background-color: rgba(247, 41, 41, 0.774);
-}
-
-.start-btn, .next-btn {
-    font-size: 2.5rem;
-    font-weight: bold;
-    padding: 10px 20px;
 }
 
 .controls {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 
 .hide {
@@ -68,3 +73,62 @@ body {
 .score-area span {
     padding: 0 15px;
 }
+
+/*score.html*/
+
+.final-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    max-width: 80%;
+    background-color: rgb(76, 138, 231);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px 7px rgb(178, 202, 241);
+    ;
+}
+
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    height: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.last-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 3px;
+    padding: 10px;
+}
+
+/*.sconer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}*/
