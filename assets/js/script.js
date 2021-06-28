@@ -2,7 +2,8 @@
 const startButton = document.getElementById('start-btn');
 startButton.addEventListener('click', startGame);
 //my own..
-const saveScoreButton = document.getElementById('save-score-btn'); // today
+const homeButton = document.getElementById('homePage-btn'); // today nooooow
+homeButton.classList.add('hide');
 const introHeading = document.getElementById('intro');
 //my own.
 const correctAnwersLabel = document.getElementById('correct');
@@ -16,7 +17,7 @@ let shuffledQuestions, currentQuestionIndex, correctAnswers, wrongAnswers;
 function startGame() {
     //hide start btn when clicked
     startButton.classList.add('hide');
-    saveScoreButton.classList.add('hide')
+    //homeButton.classList.add('hide')      noooooowww
     introHeading.classList.add('hide');
     //removes hide class from container
     questionContainer.classList.remove('hide');
@@ -104,17 +105,17 @@ function selectAnswer(e) {
         } else {
             startButton.innerHTML = 'Restart';
             startButton.classList.remove('hide');
-            saveScoreButton.classList.remove('hide'); //today
-            saveScoreButton.innerHTML = 'Save'; //today
+            homeButton.classList.remove('hide'); //today
+            //saveScoreButton.innerHTML = 'Save'; //today
             answerButtonsElement.classList.add('hide');
-            // document.querySelector('#question').innerHTML = 'Here is your score!'
+            document.querySelector('#question').innerHTML = 'Here is your score!'
         }
     }, 1000 * 2);
 }
 
 //my own code.
-document.querySelector('#save-score-btn').addEventListener('click', () => {
-    window.location.href = 'score.html';
+document.querySelector('#homePage-btn').addEventListener('click', () => {   // noooooowww
+    window.location.href = 'index.html';
 })
 
 
