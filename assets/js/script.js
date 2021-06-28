@@ -1,3 +1,13 @@
+// Hello.
+//
+// This is JSHint, a tool that helps to detect errors and potential
+// problems in your JavaScript code.
+//
+// To start, simply enter some JavaScript anywhere on this page. Your
+// report will appear on the right side.
+//
+// Additionally, you can toggle specific options in the Configure
+// menu.
 // targets ID in html.........
 const startButton = document.getElementById('start-btn');
 startButton.addEventListener('click', startGame);
@@ -28,12 +38,12 @@ function startGame() {
     resetStatistics();
     //calls function
     setNextQuestion();
-    
+
 }
 
 //...
 const questionElement = document.getElementById('question');
-const answerButtonsElement = document.getElementById('answer-buttons');//////answer buttons
+const answerButtonsElement = document.getElementById('answer-buttons'); //////answer buttons
 
 //...
 function setNextQuestion() {
@@ -44,7 +54,7 @@ function setNextQuestion() {
 
 //set up to make each question clicable only once
 //const isClicked = (question) => {
-    //if ()
+//if ()
 //}
 
 /**
@@ -86,9 +96,9 @@ function disableAnswerButtons() {
 function selectAnswer(e) {
     disableAnswerButtons();
 
-    const selectedButton = e.target
-    const correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    setStatusClass(document.body, correct);
 
     // Tranverse answers and show background color
     Array.from(answerButtonsElement.children).forEach((button) => {
@@ -108,15 +118,15 @@ function selectAnswer(e) {
             homeButton.classList.remove('hide'); //today
             //saveScoreButton.innerHTML = 'Save'; //today
             answerButtonsElement.classList.add('hide');
-            document.querySelector('#question').innerHTML = 'Here is your score!'
+            document.querySelector('#question').innerHTML = 'Here is your score!';
         }
     }, 1000 * 2);
 }
 
 //my own code.
-document.querySelector('#homePage-btn').addEventListener('click', () => {   // noooooowww
+document.querySelector('#homePage-btn').addEventListener('click', () => { // noooooowww
     window.location.href = 'index.html';
-})
+});
 
 
 //list of questions
@@ -140,7 +150,7 @@ function resetStatistics() {
 
 //....
 function setStatusClass(element, correct) {
-    clearStatusClass(element)
+    clearStatusClass(element);
     if (correct) {
         element.classList.add('correct');
     } else {
