@@ -20,13 +20,14 @@ function startGame() {
     introHeading.classList.add('hide');
     //removes hide class from container
     questionContainer.classList.remove('hide');
+    answerButtonsElement.classList.remove('hide');
     //generates random questions
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
-    correctAnswers = 0;
-    wrongAnswers = 0;
+    resetStatistics();
     //calls function
     setNextQuestion();
+    
 }
 
 //...
@@ -103,10 +104,10 @@ function selectAnswer(e) {
         } else {
             startButton.innerHTML = 'Restart';
             startButton.classList.remove('hide');
-            saveScoreButton.classList.remove('hide'); //todayd
+            saveScoreButton.classList.remove('hide'); //today
             saveScoreButton.innerHTML = 'Save'; //today
             answerButtonsElement.classList.add('hide');
-            document.querySelector('#question').innerHTML = 'Here is your score!'
+            // document.querySelector('#question').innerHTML = 'Here is your score!'
         }
     }, 1000 * 2);
 }
@@ -127,6 +128,13 @@ function updateStatistics(isCorrectAnswer) {
         wrongAnswers++;
         wrongAnswersLabel.innerText = wrongAnswers;
     }
+}
+
+function resetStatistics() {
+    correctAnswers = 0;
+    wrongAnswers = 0;
+    correctAnwersLabel.innerText = correctAnswers;
+    wrongAnswersLabel.innerText = wrongAnswers;
 }
 
 //....
