@@ -70,8 +70,20 @@ function resetState() {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
 }
+
+/**
+ * Disable all current list of answer's button
+ */
+function disableAnswerButtons() {
+    answerButtonsElement.childNodes.forEach((button) => {
+        button.disabled = true;
+    });
+}
+
 //.....
 function selectAnswer(e) {
+    disableAnswerButtons();
+
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
     setStatusClass(document.body, correct)
@@ -91,7 +103,7 @@ function selectAnswer(e) {
         } else {
             startButton.innerHTML = 'Restart';
             startButton.classList.remove('hide');
-            saveScoreButton.classList.remove('hide'); //today
+            saveScoreButton.classList.remove('hide'); //todayd
             saveScoreButton.innerHTML = 'Save'; //today
             answerButtonsElement.classList.add('hide');
             document.querySelector('#question').innerHTML = 'Here is your score!'
