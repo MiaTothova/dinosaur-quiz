@@ -2,7 +2,8 @@
 const startButton = document.getElementById('start-btn');
 startButton.addEventListener('click', startGame);
 //my own..
-const saveScoreButton = document.getElementById('save-score-btn') // today
+const saveScoreButton = document.getElementById('save-score-btn'); // today
+const introHeading = document.getElementById('intro');
 //my own.
 const correctAnwersLabel = document.getElementById('correct');
 const wrongAnswersLabel = document.getElementById('incorrect');
@@ -16,6 +17,7 @@ function startGame() {
     //hide start btn when clicked
     startButton.classList.add('hide');
     saveScoreButton.classList.add('hide')
+    introHeading.classList.add('hide');
     //removes hide class from container
     questionContainer.classList.remove('hide');
     //generates random questions
@@ -29,7 +31,7 @@ function startGame() {
 
 //...
 const questionElement = document.getElementById('question');
-const answerButtonsElement = document.getElementById('answer-buttons');
+const answerButtonsElement = document.getElementById('answer-buttons');//////answer buttons
 
 //...
 function setNextQuestion() {
@@ -37,6 +39,11 @@ function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
+
+//set up to make each question clicable only once
+//const isClicked = (question) => {
+    //if ()
+//}
 
 /**
  * 
@@ -86,6 +93,8 @@ function selectAnswer(e) {
             startButton.classList.remove('hide');
             saveScoreButton.classList.remove('hide'); //today
             saveScoreButton.innerHTML = 'Save'; //today
+            answerButtonsElement.classList.add('hide');
+            document.querySelector('#question').innerHTML = 'Here is your score!'
         }
     }, 1000 * 2);
 }
