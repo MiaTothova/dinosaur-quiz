@@ -99,8 +99,12 @@ body {
     font-size: 1.2rem;
 }
 
+.score-area p {
+    margin: 7px;
+}
+
 .score-area span {
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 /*score.html*/
