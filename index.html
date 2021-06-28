@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Dinosaur quiz for children" />
+    <meta name="keywords" content="dino,dinosaur game, kids quiz, kids trivia" />
+    <meta name="author" content="Marketa Mia Tothova" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Dinosaur Quiz</title>
 </head>
+
 <body>
-    <!--<div id="heading">
-        <h1>Dinosaur Quiz</h1>
-    </div>-->
+    
     <div class="container">
+        <div id="intro">
+            <h1 id="heading">Dinosaur Facts</h1>
+            <p id="p">Do you know them all?</p>
+        </div>
         <!--Questions-->
         <div id="question-container" class="hide">
             <div id="question">Question..........</div>
@@ -21,17 +28,17 @@
                 <button class="btn">Answer C</button>
             </div>
 
-            <div class="score-area"> 
+            <div class="score-area">
                 <p class="scores">Correct Answers <span id="correct"> 0</span></p>
                 <p class="scores">Incorect Answers <span id="incorrect"> 0</span></p>
-        
+
             </div>
         </div>
 
         <!--Controls-->
         <div class="controls">
             <button id="start-btn" class="start-btn btn">Start</button>
-            <button id="save-score-btn" class="save-btn btn">Top Scores
+            <button id="save-score-btn" class="save-btn btn">Scores
             </button>
         </div>
     </div>
@@ -41,4 +48,5 @@
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
