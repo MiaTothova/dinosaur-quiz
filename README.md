@@ -36,7 +36,7 @@ To achieve my goal, I included the following features my website:
 
 1. A game container where all the buttons, Heading, questions and score will be nested.
 2. Fully functioning Buttons to navigate, and control the game.
-3. Score area where answers will be added.
+3. Score area where right and wrong answers will be added up.
 
 ### The skeleton
 The Game consists of only 1 page index.html which is the main page. I am using JavaScript to make buttons and divs hide and reappear to give the illusion of different game areas.
@@ -47,9 +47,17 @@ The Game consists of only 1 page index.html which is the main page. I am using J
 
 * [Phone view](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/wireframes/phone-view.png)
 
+## Feature
+* Responsive on all device sizes.
+* Heading introduction to the game.
+* question and answer display.
+* Pointer effect with Hover: when hovering over answers and buttons.
 
-
-### Feature......
+### Future features
+I ran out of time to implement these changes, I will inplment them in the future:
+* Form validation: The input required in the "name" box.
+* Save score option.
+* Top 5 high scores board.
 
 
 ## The Design
@@ -64,7 +72,6 @@ font
 color
 imagery
 Logo/Heading
-
 
 ### Features
 1. Start button on main page.
