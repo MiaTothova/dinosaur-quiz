@@ -95,22 +95,43 @@ The Quiz has 3 areas:
 2. As a visitor, I want to be able to play the game and see how many questions I got right or wrong.
 ![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/answers.png)
 ![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/end-page.png)
+ 
 
+ ### Adicional Testing
+ I used dev tools to continuesly inspect my code and check my responsivnes in diferent screen sizes.
+ I also  W3C HTML Validator and W3C CSS Validator Services as well as jshint to ensure there were no errors in the project.
+* W3C HTML Validation
+* W3C CSS Validator
+* Jshint
+
+ ## Compatibility
+To ensure that a broad range of users can successfully view/use the site, I tested it across all major browsers on both desktop and mobile.
+* Chrome
+* Mozila Firefox
+* Edge
+* Internet explorer
+* Safari
 
 ## Validation
+![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/css-checker.png)
+![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/html-checker.png)
+![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/color-validation.png)
 
 ## Deployment
 
 
 ### Content
+Questions,and image and quiz ideas have been taken from:
+* [cambridge-news](https://www.cambridge-news.co.uk/news/uk-world-news/20-dinosaur-quiz-questions-test-18232204)
+* [Google Images](https://www.google.com/imghp?hl=en)
+* [Youtube](https://www.youtube.com/)
 
 ## Credits
-Code taken from.....
-image source google images
-questions saved in notebook 
-
-
-## Acknowledgements
+* Pieces from my code and main quiz idea has come from this youtube video. 
+[Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k)
+* I also used [Codecademy](https://www.codecademy.com/courses/build-interactive-websites/projects/chore-door) to help me expand my knowledge of javascript so that I was able to write my own functions. Building the chorebot game has greatly improved my understanding based on how it was broken down and explained. prior to this I was feeling very lost and didnt understand javascript at all. 
+* Getting to this stage I can say that I am at the very begining of understanding javascript and I love the potential this language has. Some inspiration has also been taken from the following video: [Youtube](https://www.youtube.com/watch?v=f4fB9Xg2JEY)
+* My Mentor Guido Cecilio Garcia Bernal was extremely helpful in breaking all the steps down for me and answering any questions I had.
 
 
 
