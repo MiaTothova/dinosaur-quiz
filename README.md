@@ -79,10 +79,22 @@ The Quiz has 3 areas:
 * [TinyPNG](https://tinypng.com/)I used this website to compress my images to improve website loading times.
 * [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) Was use to check the markup of the web documents in HTLM.
 * [W3C jigsaw Validation Service](https://jigsaw.w3.org/css-validator/validator) Was used to chech and validate the CSS in my project.
-* [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)Was used to inspect any issues and inspect the responsiveness of the website.
+* [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)Was used to inspect any javascript issues and inspect the responsiveness of the website.
 * [a11y Contrast Checker](https://color.a11y.com/) This was used to make sure that the project meets visual standards.
 
 ## Testing
+
+1. As a new visitor, I want to easily navigate the site to start the game.
+![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/start-page.png)
+
+1. As the owner, I want the game to be fun and make the user to keep playing.
+2. As the owner, I want the game to be educational.
+3. As the owner, I want to show my new learned skills with JavaScript.
+![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/question-container.png)
+
+2. As a visitor, I want to be able to play the game and see how many questions I got right or wrong.
+![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/answers.png)
+![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/end-page.png)
 
 
 ## Validation
