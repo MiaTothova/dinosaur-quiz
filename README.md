@@ -1,14 +1,11 @@
 # Dinosaur Facts
 
-Insert am I responsive image!
-
 [View the live project here.](https://miatothova.github.io/dinosaur-quiz/)
 
 ![alt text](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/am-i-responsive.png)
 The image is from [Am I responsive?](http://ami.responsivedesign.is/)
 
 Dinosaur Facts is a website designed mainly for children 7 years and up. Its main purpose is to provide a fun environment in which the children can test out their knowledge for their beloved Dinosaurs. 
-
 
 ## UX
 I aimed to create a simple quiz game for children that looks fun, but is very easy on the eye with design.
@@ -70,8 +67,6 @@ The Quiz has 3 areas:
 2. quiz page after hitting the Start button, a list of questions and avaialable answers with a score pannel apears. These questions are shuffled  so that they arent shown in the same order each time.
 3. End page in which is where the questions are hiden and only displays the score panel, Restart and Home buttons.
 
-
-
 ## Technologies Used
 * [Gitpod](https://gitpod.io/workspaces)I used this developer to write the code for this website.
 * [Github](https://github.com/) Was used to host my code that was created and pushed to Gitpod.
@@ -83,7 +78,6 @@ The Quiz has 3 areas:
 * [a11y Contrast Checker](https://color.a11y.com/) This was used to make sure that the project meets visual standards.
 
 ## Testing
-
 1. As a new visitor, I want to easily navigate the site to start the game.
 ![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/start-page.png)
 
@@ -96,7 +90,6 @@ The Quiz has 3 areas:
 ![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/answers.png)
 ![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/end-page.png)
  
-
  ### Adicional Testing
  I used dev tools to continuesly inspect my code and check my responsivnes in diferent screen sizes.
  I also  W3C HTML Validator and W3C CSS Validator Services as well as jshint to ensure there were no errors in the project.
@@ -119,6 +112,16 @@ To ensure that a broad range of users can successfully view/use the site, I test
 
 ## Deployment
 
+This project was developed using Gitpod, committed to git and pushed to GitHub using git commands. You can clone this repository [Here](https://github.com/MiaTothova/dinosaur-quiz)
+
+To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
+
+1. select the Settings tab in my GitHub repository. 
+2. Find GitHub Pages in the menu.
+3. Choose the Master branch and save. After this refresh the page.
+4. After the page re-freshed, I got a message "ready to be published".
+5. After re-freshing after few seconds you will get a "published" message.
+6. Clicking on the link takes you to the deployed website.
 
 ### Content
 Questions,and image and quiz ideas have been taken from:
