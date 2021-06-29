@@ -57,27 +57,30 @@ The Game consists of only 1 page index.html which is the main page. I am using J
 * Restart and Home Buttons
 
 ### Future features
-I ran out of time to implement these changes, I will inplment them in the future:
+I ran out of time to implement these changes, I will inplement them in the future:
 * Form validation: The input required in the "name" box.
 * Save score option.
 * Top 5 high scores board.
 
 ## The Design
-To achieve my goal, I included the following features in my website:
+It is a children's game therefore the imagery is very simple. I added a wallpapper background with a selection of Dinosaurs which I got from google images. once the game is restarted, I left the Home button underneath the score panel so that the child can return back to the main page if wanted. 
 
 The Quiz has 3 areas:
 1. Home Page which displays the heading and a start button.
-2. quiz page after hitting the Start button, a list of questions and avaialable answers with a score pannel apears. 
-3. End page is where the question container disapears and only displays the score panel and Restart and Home buttons.
-
-font
-color
-imagery
-Logo/Heading
+2. quiz page after hitting the Start button, a list of questions and avaialable answers with a score pannel apears. These questions are shuffled  so that they arent shown in the same order each time.
+3. End page in which is where the questions are hiden and only displays the score panel, Restart and Home buttons.
 
 
 
-
+## Technologies Used
+* [Gitpod](https://gitpod.io/workspaces)I used this developer to write the code for this website.
+* [Github](https://github.com/) Was used to host my code that was created and pushed to Gitpod.
+* [Google Fonts](https://fonts.google.com/) Was used to style the website's fonts.
+* [TinyPNG](https://tinypng.com/)I used this website to compress my images to improve website loading times.
+* [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) Was use to check the markup of the web documents in HTLM.
+* [W3C jigsaw Validation Service](https://jigsaw.w3.org/css-validator/validator) Was used to chech and validate the CSS in my project.
+* [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)Was used to inspect any issues and inspect the responsiveness of the website.
+* [a11y Contrast Checker](https://color.a11y.com/) This was used to make sure that the project meets visual standards.
 
 ## Testing
 
@@ -91,6 +94,8 @@ Logo/Heading
 
 ## Credits
 Code taken from.....
+image source google images
+questions saved in notebook 
 
 
 ## Acknowledgements
