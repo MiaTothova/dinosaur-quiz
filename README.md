@@ -2,21 +2,30 @@
 
 Insert am I responsive image!
 
+[View the live project here.](https://miatothova.github.io/dinosaur-quiz/)
+
+![alt text](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/am-i-responsive.png)
+The image is from [Am I responsive?](http://ami.responsivedesign.is/)
+
 Dinosaur Facts is a website designed mainly for children 7 years and up. Its main purpose is to provide a fun environment in which the children can test out their knowledge for their beloved Dinosaurs. 
 
 
-
 ## UX
-I aimed to create a simple quiz game for children that is straight forward.
+I aimed to create a simple quiz game for children that looks fun, but is very easy on the eye with design.
 
 #### The ideal client:
 * Children
 * Dinosaur Lovers
-* |English Speaking
+* English Speaking
 
 ### The website will help clients to:
 * Navigate easily through the website
 * Test their knowledge
+
+## Owner Stories
+1. As the owner, I want the game to be fun and make the user to keep playing.
+2. As the owner, I want the game to be educational.
+3. As the owner, I want to show my new learned skills with JavaScript.
 
 ### User Stories
 1. As a new visitor, I want to easily navigate the site to start the game.
@@ -25,13 +34,14 @@ I aimed to create a simple quiz game for children that is straight forward.
 ### The Scope
 To achieve my goal, I included the following features my website:
 
-1. A game container where all the buttons, Heading, questins and score will be nested.
+1. A game container where all the buttons, Heading, questions and score will be nested.
 2. Fully functioning Buttons to navigate, and control the game.
-3. Score area where answers will be added. 
+3. Score area where answers will be added.
 
 ### The skeleton
-The Game consists of only 1 page index.html which is the main page. I am using JavaScript to make buttons and divs hide and re apear to give the ilusion of diferent game areas.
-#### // enter wireframes here
+The Game consists of only 1 page index.html which is the main page. I am using JavaScript to make buttons and divs hide and reappear to give the illusion of different game areas.
+
+#### // enter wireframes here....................
 
 
 ### Feature......
