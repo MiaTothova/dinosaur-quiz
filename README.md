@@ -47,11 +47,14 @@ The Game consists of only 1 page index.html which is the main page. I am using J
 
 * [Phone view](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/wireframes/phone-view.png)
 
-## Feature
+## Features
 * Responsive on all device sizes.
 * Heading introduction to the game.
 * question and answer display.
 * Pointer effect with Hover: when hovering over answers and buttons.
+* Start button on main page.
+* Score pannel
+* Restart and Home Buttons
 
 ### Future features
 I ran out of time to implement these changes, I will inplment them in the future:
@@ -59,9 +62,8 @@ I ran out of time to implement these changes, I will inplment them in the future
 * Save score option.
 * Top 5 high scores board.
 
-
 ## The Design
-To achieve my goal, I included the following features my website:
+To achieve my goal, I included the following features in my website:
 
 The Quiz has 3 areas:
 1. Home Page which displays the heading and a start button.
@@ -73,12 +75,6 @@ color
 imagery
 Logo/Heading
 
-### Features
-1. Start button on main page.
-2. Question display
-3. Answer buttons
-4. Score pannel
-5. Restart and Home Buttons
 
 
 
