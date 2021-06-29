@@ -1,59 +1,81 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Dinosaur Facts
 
-Welcome MiaTothova,
+Insert am I responsive image!
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+Dinosaur Facts is a website designed mainly for children 7 years and up. Its main purpose is to provide a fun environment in which the children can test out their knowledge for their beloved Dinosaurs. 
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## UX
+I aimed to create a simple quiz game for children that is straight forward.
 
-A blue button should appear to click: _Make Public_,
+#### The ideal client:
+* Children
+* Dinosaur Lovers
+* |English Speaking
 
-Another blue button should appear to click: _Open Browser_.
+### The website will help clients to:
+* Navigate easily through the website
+* Test their knowledge
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### User Stories
+1. As a new visitor, I want to easily navigate the site to start the game.
+2. As a visitor, I want to be able to play the game and see how many questions I got right or wrong.
 
-A blue button should appear to click: _Make Public_,
+### The Scope
+To achieve my goal, I included the following features my website:
 
-Another blue button should appear to click: _Open Browser_.
+1. A game container where all the buttons, Heading, questins and score will be nested.
+2. Fully functioning Buttons to navigate, and control the game.
+3. Score area where answers will be added. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### The skeleton
+The Game consists of only 1 page index.html which is the main page. I am using JavaScript to make buttons and divs hide and re apear to give the ilusion of diferent game areas.
+#### // enter wireframes here
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Feature......
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
 
-## Updates Since The Instructional Video
+## The Design
+To achieve my goal, I included the following features my website:
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The Quiz has 3 areas:
+1. Home Page which displays the heading and a start button.
+2. quiz page after hitting the Start button, a list of questions and avaialable answers with a score pannel apears. 
+3. End page is where the question container disapears and only displays the score panel and Restart and Home buttons.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+font
+color
+imagery
+Logo/Heading
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Features
+1. Start button on main page.
+2. Question display
+3. Answer buttons
+4. Score pannel
+5. Restart and Home Buttons
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Testing
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Validation
 
----
+## Deployment
 
-Happy coding!
+
+### Content
+
+## Credits
+Code taken from.....
+
+
+## Acknowledgements
+
+
+
