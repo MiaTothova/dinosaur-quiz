@@ -79,15 +79,22 @@ The Quiz has 3 areas:
 
 ## Testing
 1. As a new visitor, I want to easily navigate the site to start the game.
+* Start Button is vissible when the page is loaded.
 ![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/start-page.png)
 
-1. As the owner, I want the game to be fun and make the user to keep playing.
-2. As the owner, I want the game to be educational.
-3. As the owner, I want to show my new learned skills with JavaScript.
+2. As the owner, I want the game to be fun and make the user to keep playing.
+3. As the owner, I want the game to be educational.
+4. As the owner, I want to show my new learned skills with JavaScript.
+* All the above have been fulfilled on starting the game.
+* Questions are educational, fun and encourage the player to keep playing.
 ![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/question-container.png)
 
-2. As a visitor, I want to be able to play the game and see how many questions I got right or wrong.
-![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/answers.png)
+5. As a visitor, I want to be able to play the game and see how many questions I got right or wrong.
+* This can be seen in the next two images.
+* Buttons turn red and green on selecting answer. If a correct button is clicked it turns green, but also turns the rest red to educate the child on the correct answer.
+![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/answers.png) 
+
+*At the end, number of correct and wrong answers is vissible with the option to restart or return to the home page. 
 ![](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/images/end-page.png)
  
  ### Adicional Testing
