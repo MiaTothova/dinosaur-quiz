@@ -41,7 +41,12 @@ To achieve my goal, I included the following features my website:
 ### The skeleton
 The Game consists of only 1 page index.html which is the main page. I am using JavaScript to make buttons and divs hide and reappear to give the illusion of different game areas.
 
-#### // enter wireframes here....................
+* [Web view](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/wireframes/web-view.png)
+
+* [Tablet view](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/wireframes/tablet-view.png)
+
+* [Phone view](https://github.com/MiaTothova/dinosaur-quiz/blob/master/readme-images/wireframes/phone-view.png)
+
 
 
 ### Feature......
