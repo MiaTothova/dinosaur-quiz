@@ -1,39 +1,39 @@
-// Hello.
-//
-// This is JSHint, a tool that helps to detect errors and potential
-// problems in your JavaScript code.
-//
-// To start, simply enter some JavaScript anywhere on this page. Your
-// report will appear on the right side.
-//
-// Additionally, you can toggle specific options in the Configure
-// menu.
-// targets ID in html.........
-const startButton = document.getElementById('start-btn');
-startButton.addEventListener('click', startGame);
-//my own..
-const homeButton = document.getElementById('homePage-btn'); // today nooooow
+/**
+ * Pieces of the following code have been take from this link
+ * https://www.youtube.com/watch?v=riDzcEQbX6k
+ * 
+ * I will comment on borrowed code as "borroved""
+ * Any code without a "borrowed" is my own
+ * 
+ * please note, some borrowed code is customised by me.
+ */
+
+
+const startButton = document.getElementById('start-btn'); //borrowed
+startButton.addEventListener('click', startGame); //borrowed
+
+const homeButton = document.getElementById('homePage-btn');
 homeButton.classList.add('hide');
 const introHeading = document.getElementById('intro');
-//my own.
+
 const correctAnwersLabel = document.getElementById('correct');
 const wrongAnswersLabel = document.getElementById('incorrect');
 
-//....
-const questionContainer = document.getElementById('question-container');
-let shuffledQuestions, currentQuestionIndex, correctAnswers, wrongAnswers;
 
-//...
+const questionContainer = document.getElementById('question-container'); //borrowed
+let shuffledQuestions, currentQuestionIndex, correctAnswers, wrongAnswers; //borrowed
+
+//borrowed
 function startGame() {
     //hide start btn when clicked
     startButton.classList.add('hide');
-    //homeButton.classList.add('hide')      noooooowww
+    //homeButton.classList.add('hide')      
     introHeading.classList.add('hide');
     //removes hide class from container
     questionContainer.classList.remove('hide');
     answerButtonsElement.classList.remove('hide');
     //generates random questions
-    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     resetStatistics();
     //calls function
@@ -41,26 +41,21 @@ function startGame() {
 
 }
 
-//...
-const questionElement = document.getElementById('question');
-const answerButtonsElement = document.getElementById('answer-buttons'); //////answer buttons
+const questionElement = document.getElementById('question'); //borrowed
+const answerButtonsElement = document.getElementById('answer-buttons'); //borrowed
 
-//...
+
 function setNextQuestion() {
     // will remove previous answers
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
-//set up to make each question clicable only once
-//const isClicked = (question) => {
-//if ()
-//}
-
 /**
  * 
  * @param {*} question 
  */
+//borrowed
 function showQuestion(question) {
     questionElement.innerText = question.question;
     question.answers.forEach((answer) => {
@@ -75,7 +70,7 @@ function showQuestion(question) {
     });
 }
 
-//.....
+//borrowed
 //removes previous questions
 function resetState() {
     while (answerButtonsElement.firstChild) {
@@ -92,7 +87,7 @@ function disableAnswerButtons() {
     });
 }
 
-//.....
+//borrowed
 function selectAnswer(e) {
     disableAnswerButtons();
 
@@ -106,7 +101,7 @@ function selectAnswer(e) {
     });
 
     updateStatistics(correct);
-    //my-own...
+
     //end of the game...
     setTimeout(() => {
         if (shuffledQuestions.length > currentQuestionIndex + 1) {
@@ -115,22 +110,18 @@ function selectAnswer(e) {
         } else {
             startButton.innerHTML = 'Restart';
             startButton.classList.remove('hide');
-            homeButton.classList.remove('hide'); //today
-            //saveScoreButton.innerHTML = 'Save'; //today
+            homeButton.classList.remove('hide');
             answerButtonsElement.classList.add('hide');
             document.querySelector('#question').innerHTML = 'Here is your score!';
         }
     }, 1000 * 2);
 }
 
-//my own code.
-document.querySelector('#homePage-btn').addEventListener('click', () => { // noooooowww
+document.querySelector('#homePage-btn').addEventListener('click', () => {
     window.location.href = 'index.html';
 });
 
-
 //list of questions
-//own...
 function updateStatistics(isCorrectAnswer) {
     if (isCorrectAnswer) {
         correctAnswers++;
@@ -148,7 +139,7 @@ function resetStatistics() {
     wrongAnswersLabel.innerText = wrongAnswers;
 }
 
-//....
+//borrowed
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
@@ -158,15 +149,13 @@ function setStatusClass(element, correct) {
     }
 }
 
-//...
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
 }
 
-
-//...my own code
-// 4. list of questions
+//array 
+// list of questions
 const questions = [{
         question: 'How many horns did a triceratops have?',
         answers: [{
